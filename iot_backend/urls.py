@@ -23,5 +23,7 @@ def blank (request) :
 # semua URL yang dikenali oleh aplikasi kita
 urlpatterns = [
     path('', blank),
+    path('api/v1/',include('detektor_suhu.urls')),
     path('admin/',admin.site.urls),
+
 ]
